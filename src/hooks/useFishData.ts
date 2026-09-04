@@ -16,7 +16,7 @@ export function useFishData() {
 
   useEffect(() => {
     if (query.data && query.data.species.length > 0) setFishData(query.data);
-    else if (query.isError) setFishData(FALLBACK_FISH_DATA);
+    else if (query.data || query.isError) setFishData(FALLBACK_FISH_DATA);
   }, [query.data, query.isError]);
 
   return query;
