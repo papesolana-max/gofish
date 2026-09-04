@@ -5,6 +5,24 @@
 //     React/TanStack dedupe, error logger plugins, and sandbox detection (port/host/strictPort).
 // You can pass additional config via defineConfig({ vite: { ... }, etc... }) if needed.
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
+import { worldAssetsDev } from "./plugins/worldAssetsDev";
+
+// react-three-fiber crashes when devtools injects `data-tsd-source` onto
+// three.js elements, so strip that attribute from 3D component files only.
+const stripTsdSourceFor3D = {
+  name: "strip-tsd-source-r3f",
+  enforce: "post" as const,
+  transform(code: string, id: string) {
+    if (!/src[\\/]components[\\/]game[\\/]/.test(id)) return null;
+    if (!code.includes("data-tsd-source")) return null;
+    return {
+      code: code
+        .replace(/"data-tsd-source":\s*"[^"]*",?/g, "")
+        .replace(/\sdata-tsd-source="[^"]*"/g, ""),
+      map: null,
+    };
+  },
+};
 
 export default defineConfig({
   tanstackStart: {
@@ -12,4 +30,6 @@ export default defineConfig({
     // nitro/vite builds from this
     server: { entry: "server" },
   },
+  vite: { plugins: [stripTsdSourceFor3D, worldAssetsDev()] },
 });
+

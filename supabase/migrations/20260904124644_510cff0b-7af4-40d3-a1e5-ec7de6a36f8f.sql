@@ -1,0 +1,2 @@
+REVOKE EXECUTE ON FUNCTION public.record_catch(text, text, text, numeric, text) FROM anon, authenticated;
+REVOKE EXECUTE ON FUNCTION public.sell_fish(text, uuid, text, boolean) FROM anon, authenticated;

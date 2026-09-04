@@ -1,0 +1,894 @@
+{
+  "version": 1,
+  "updatedAt": 1788502577578,
+  "objects": [
+    {
+      "id": "o_mtmfyept_2q85z",
+      "name": "kaleo islands.glb",
+      "ext": "glb",
+      "position": [
+        -0.6444512596191991,
+        -19.647576904787087,
+        -0.33422671238673374
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        200,
+        200,
+        200
+      ],
+      "walkable": true,
+      "solid": false,
+      "visible": true,
+      "url": "/models/kaleo_islands-192f4dfc.glb"
+    },
+    {
+      "id": "o_mtmg8gyn_jcbgb",
+      "name": "bait shop.glb",
+      "ext": "glb",
+      "position": [
+        -14.585209421219297,
+        2.669475988617533,
+        -3.416518500240894
+      ],
+      "rotation": [
+        0,
+        -0.24393962393156216,
+        0
+      ],
+      "scale": [
+        20,
+        20,
+        20
+      ],
+      "walkable": false,
+      "solid": true,
+      "visible": true,
+      "url": "/models/bait_shop-c737afcb.glb"
+    },
+    {
+      "id": "o_mtmgfqqc_p61ot",
+      "name": "FISHSHOP.glb",
+      "ext": "glb",
+      "position": [
+        10.074126068004913,
+        2.6,
+        3.756992591921712
+      ],
+      "rotation": [
+        0,
+        -0.25,
+        0
+      ],
+      "scale": [
+        20,
+        20,
+        20
+      ],
+      "walkable": false,
+      "solid": true,
+      "visible": true,
+      "url": "/models/FISHSHOP-f0530092.glb"
+    },
+    {
+      "id": "o_mtmgike3_5l5db",
+      "name": "BOAT SHOOP.glb",
+      "ext": "glb",
+      "position": [
+        30.642558086472143,
+        2.6707017919043086,
+        22.725059999282493
+      ],
+      "rotation": [
+        0,
+        -1.25,
+        0
+      ],
+      "scale": [
+        20,
+        20,
+        20
+      ],
+      "walkable": false,
+      "solid": true,
+      "visible": true,
+      "url": "/models/BOAT_SHOOP-9dab28cc.glb"
+    },
+    {
+      "id": "o_mtmglzne_fvinq",
+      "name": "cartoon_boardwalk_large.glb",
+      "ext": "glb",
+      "position": [
+        -80.55803977971527,
+        -1.997819908457891,
+        13.074510382944558
+      ],
+      "rotation": [
+        0,
+        0.5,
+        0
+      ],
+      "scale": [
+        0.7311867292238583,
+        1,
+        1
+      ],
+      "walkable": true,
+      "solid": false,
+      "visible": true,
+      "url": "/models/cartoon_boardwalk_large-87ae8933.glb"
+    },
+    {
+      "id": "o_mtmgoukf_uvmcs",
+      "name": "cartoon_boardwalk_large.glb (copy)",
+      "ext": "glb",
+      "position": [
+        19.40868656845766,
+        -1.997819908457891,
+        69.9514824636378
+      ],
+      "rotation": [
+        0,
+        1.4,
+        0
+      ],
+      "scale": [
+        0.7311867292238583,
+        1,
+        1
+      ],
+      "walkable": true,
+      "solid": false,
+      "visible": true,
+      "url": "/models/cartoon_boardwalk_large-87ae8933.glb"
+    },
+    {
+      "id": "o_mtmgs74w_j2yqy",
+      "name": "stylized_tree.glb",
+      "ext": "glb",
+      "position": [
+        45.745560552828955,
+        2.640484225683002,
+        41.23296795644583
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        80,
+        80,
+        80
+      ],
+      "walkable": false,
+      "solid": false,
+      "visible": true,
+      "url": "/models/stylized_tree-5352a2ee.glb"
+    },
+    {
+      "id": "o_mtmgtbxv_wfqe6",
+      "name": "stylized_tree.glb (copy)",
+      "ext": "glb",
+      "position": [
+        34.564844511291625,
+        2.640484225683002,
+        60.03799863969344
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        50,
+        50,
+        50
+      ],
+      "walkable": false,
+      "solid": false,
+      "visible": true,
+      "url": "/models/stylized_tree-5352a2ee.glb"
+    },
+    {
+      "id": "o_mtmgurb5_b4fcd",
+      "name": "stylized_tree.glb (copy) (copy)",
+      "ext": "glb",
+      "position": [
+        51.393888669362205,
+        2.640484225683002,
+        60.222331105731
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        65,
+        65,
+        65
+      ],
+      "walkable": false,
+      "solid": false,
+      "visible": true,
+      "url": "/models/stylized_tree-5352a2ee.glb"
+    },
+    {
+      "id": "o_mtmgvjqa_0p9zj",
+      "name": "stylized_tree.glb (copy)",
+      "ext": "glb",
+      "position": [
+        42.27338068473908,
+        -3.101094888459171,
+        17.81472534311736
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        70,
+        70,
+        70
+      ],
+      "walkable": false,
+      "solid": false,
+      "visible": true,
+      "url": "/models/stylized_tree-5352a2ee.glb"
+    },
+    {
+      "id": "o_mtmgxm7x_o0auh",
+      "name": "pine_tree.glb",
+      "ext": "glb",
+      "position": [
+        35.53488799214122,
+        3.7452035662518757,
+        2.567831711935666
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.12,
+        0.12,
+        0.12
+      ],
+      "walkable": false,
+      "solid": false,
+      "visible": true,
+      "url": "/models/pine_tree-76cab767.glb"
+    },
+    {
+      "id": "o_mtmh3ldt_ze3ps",
+      "name": "pine_tree.glb (copy)",
+      "ext": "glb",
+      "position": [
+        3.0204055892425927,
+        5.658474530268013,
+        -26.25874258602298
+      ],
+      "rotation": [
+        0.3,
+        0,
+        0
+      ],
+      "scale": [
+        0.12,
+        0.12,
+        0.12
+      ],
+      "walkable": false,
+      "solid": false,
+      "visible": true,
+      "url": "/models/pine_tree-76cab767.glb"
+    },
+    {
+      "id": "o_mtmh4n7f_8yui5",
+      "name": "stylized_tree.glb (copy)",
+      "ext": "glb",
+      "position": [
+        21.988886126029847,
+        2.640484225683002,
+        -14.402000415892239
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        80,
+        80,
+        80
+      ],
+      "walkable": false,
+      "solid": false,
+      "visible": true,
+      "url": "/models/stylized_tree-5352a2ee.glb"
+    },
+    {
+      "id": "o_mtmh52r5_4v1hu",
+      "name": "stylized_tree.glb (copy) (copy)",
+      "ext": "glb",
+      "position": [
+        -16.94249725364223,
+        2.640484225683002,
+        -22.703324503365835
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        55,
+        55,
+        55
+      ],
+      "walkable": false,
+      "solid": false,
+      "visible": true,
+      "url": "/models/stylized_tree-5352a2ee.glb"
+    },
+    {
+      "id": "o_mtmh5orl_kmvt5",
+      "name": "stylized_tree.glb (copy) (copy) (copy)",
+      "ext": "glb",
+      "position": [
+        -35.10756120175504,
+        -1.9055112681059754,
+        -24.666071382267596
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        90,
+        90,
+        90
+      ],
+      "walkable": false,
+      "solid": false,
+      "visible": true,
+      "url": "/models/stylized_tree-5352a2ee.glb"
+    },
+    {
+      "id": "o_mtmh6f0w_m2ieq",
+      "name": "pine_tree.glb (copy) (copy)",
+      "ext": "glb",
+      "position": [
+        -57.72882634856122,
+        3.0819512082426463,
+        -27.472886456757443
+      ],
+      "rotation": [
+        0.3,
+        0,
+        0
+      ],
+      "scale": [
+        0.12,
+        0.12,
+        0.12
+      ],
+      "walkable": false,
+      "solid": false,
+      "visible": true,
+      "url": "/models/pine_tree-76cab767.glb"
+    },
+    {
+      "id": "o_mtmh6vhm_uayp1",
+      "name": "stylized_tree.glb (copy) (copy) (copy) (copy)",
+      "ext": "glb",
+      "position": [
+        -75.10005524092429,
+        -1.9055112681059754,
+        -10.241381007651547
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        90,
+        90,
+        90
+      ],
+      "walkable": false,
+      "solid": false,
+      "visible": true,
+      "url": "/models/stylized_tree-5352a2ee.glb"
+    },
+    {
+      "id": "o_mtmh7a2g_8prqh",
+      "name": "pine_tree.glb (copy) (copy) (copy)",
+      "ext": "glb",
+      "position": [
+        -83.3178922990522,
+        3.0819512082426463,
+        -32.36616433519671
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.16,
+        0.16,
+        0.16
+      ],
+      "walkable": false,
+      "solid": false,
+      "visible": true,
+      "url": "/models/pine_tree-76cab767.glb"
+    },
+    {
+      "id": "o_mtmh8hiv_kv3cz",
+      "name": "stylized_tree.glb (copy) (copy) (copy) (copy) (copy)",
+      "ext": "glb",
+      "position": [
+        -61.83515629147995,
+        26.496407954590257,
+        -45.850940626966526
+      ],
+      "rotation": [
+        -0.2,
+        0.1,
+        0.2
+      ],
+      "scale": [
+        40,
+        40,
+        40
+      ],
+      "walkable": false,
+      "solid": false,
+      "visible": true,
+      "url": "/models/stylized_tree-5352a2ee.glb"
+    },
+    {
+      "id": "o_mtmh9qme_umsxz",
+      "name": "stylized_tree.glb (copy) (copy) (copy) (copy) (copy) (copy)",
+      "ext": "glb",
+      "position": [
+        -72.85968654033977,
+        13.361798007029808,
+        -41.850940626966526
+      ],
+      "rotation": [
+        -0.2,
+        0.1,
+        0.2
+      ],
+      "scale": [
+        65,
+        65,
+        65
+      ],
+      "walkable": false,
+      "solid": false,
+      "visible": true,
+      "url": "/models/stylized_tree-5352a2ee.glb"
+    },
+    {
+      "id": "o_mtmhau6t_zn0g4",
+      "name": "stylized_tree.glb (copy) (copy) (copy) (copy) (copy) (copy)",
+      "ext": "glb",
+      "position": [
+        -76.64534262345776,
+        -0.08400783943946877,
+        -54.36374816635032
+      ],
+      "rotation": [
+        -0.2,
+        0.1,
+        0.2
+      ],
+      "scale": [
+        50,
+        50,
+        50
+      ],
+      "walkable": false,
+      "solid": false,
+      "visible": true,
+      "url": "/models/stylized_tree-5352a2ee.glb"
+    },
+    {
+      "id": "o_mtmhcjcp_4fpfa",
+      "name": "stylized_tree.glb (copy) (copy) (copy) (copy) (copy) (copy) (copy)",
+      "ext": "glb",
+      "position": [
+        -52.130102856754554,
+        -0.08400783943946877,
+        -72.49340903710905
+      ],
+      "rotation": [
+        -0.2,
+        0.1,
+        0.2
+      ],
+      "scale": [
+        100,
+        100,
+        100
+      ],
+      "walkable": false,
+      "solid": false,
+      "visible": true,
+      "url": "/models/stylized_tree-5352a2ee.glb"
+    },
+    {
+      "id": "o_mtmhdu4b_hh8fs",
+      "name": "stylized_tree.glb (copy) (copy) (copy) (copy) (copy) (copy) (copy) (copy)",
+      "ext": "glb",
+      "position": [
+        -16.58254307819196,
+        -0.08400783943946877,
+        -64.92969155872086
+      ],
+      "rotation": [
+        -0.2,
+        0.1,
+        0.2
+      ],
+      "scale": [
+        70,
+        70,
+        70
+      ],
+      "walkable": false,
+      "solid": false,
+      "visible": true,
+      "url": "/models/stylized_tree-5352a2ee.glb"
+    },
+    {
+      "id": "o_mtmhii3y_9183x",
+      "name": "furnished_aquarium_apartment.glb",
+      "ext": "glb",
+      "position": [
+        -77.73770141288998,
+        -9.21225659037212,
+        28.300097949539648
+      ],
+      "rotation": [
+        0,
+        -0.25,
+        0
+      ],
+      "scale": [
+        0.7,
+        0.7,
+        0.7
+      ],
+      "walkable": true,
+      "solid": false,
+      "visible": true,
+      "url": "/models/furnished_aquarium_apartment-b48e3ba3.glb"
+    },
+    {
+      "id": "o_mtmi6qn1_2nj9i",
+      "name": "shark attack boat 3d model.glb",
+      "ext": "glb",
+      "position": [
+        -8.308139283561701,
+        -3.120350736512245,
+        46.59002983761922
+      ],
+      "rotation": [
+        0,
+        -0.5,
+        0
+      ],
+      "scale": [
+        30,
+        30,
+        30
+      ],
+      "walkable": true,
+      "solid": false,
+      "visible": true,
+      "url": "/models/shark_attack_boat_3d_model-02427b48.glb"
+    },
+    {
+      "id": "o_mtmicr6a_j9clj",
+      "name": "hanging fish display 3d model.glb",
+      "ext": "glb",
+      "position": [
+        30.96186161394187,
+        2.080778464519658,
+        40.973616723436905
+      ],
+      "rotation": [
+        0,
+        -4.75,
+        0
+      ],
+      "scale": [
+        10,
+        10,
+        10
+      ],
+      "walkable": false,
+      "solid": true,
+      "visible": true,
+      "url": "/models/hanging_fish_display_3d_model-670c63ab.glb"
+    },
+    {
+      "id": "o_mtmj9fay_1548w",
+      "name": "teal rod shop 3d model.glb",
+      "ext": "glb",
+      "position": [
+        -42.88679320155195,
+        2.1936254285074153,
+        -11.295768331727665
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        26.8,
+        28.126275997849195,
+        26.8
+      ],
+      "walkable": false,
+      "solid": true,
+      "visible": true,
+      "url": "/models/teal_rod_shop_3d_model-dc32d611.glb"
+    },
+    {
+      "id": "o_mtmjjf5p_ubxsw",
+      "name": "fantasy-x..x-lantern..echad.glb",
+      "ext": "glb",
+      "position": [
+        -3.5877299366459185,
+        9.965449618400845,
+        4.348937337913271
+      ],
+      "rotation": [
+        0,
+        -0.25,
+        0
+      ],
+      "scale": [
+        15.8,
+        15.8,
+        15.8
+      ],
+      "walkable": false,
+      "solid": true,
+      "visible": true,
+      "url": "/models/fantasy-x__x-lantern__echad-ce8f0224.glb"
+    },
+    {
+      "id": "o_mtmjkw1y_imwr4",
+      "name": "fantasy-x..x-lantern..echad.glb (copy)",
+      "ext": "glb",
+      "position": [
+        21.575886909776244,
+        9.965449618400845,
+        12.966564480922415
+      ],
+      "rotation": [
+        0,
+        -0.85,
+        0
+      ],
+      "scale": [
+        15.8,
+        15.8,
+        15.8
+      ],
+      "walkable": false,
+      "solid": true,
+      "visible": true,
+      "url": "/models/fantasy-x__x-lantern__echad-ce8f0224.glb"
+    },
+    {
+      "id": "o_mtmjlfwi_ptcrx",
+      "name": "fantasy-x..x-lantern..echad.glb (copy)",
+      "ext": "glb",
+      "position": [
+        -28.65012003234418,
+        9.965449618400845,
+        -3.540400586975416
+      ],
+      "rotation": [
+        0,
+        -0.65,
+        0
+      ],
+      "scale": [
+        15.8,
+        15.8,
+        15.8
+      ],
+      "walkable": false,
+      "solid": true,
+      "visible": true,
+      "url": "/models/fantasy-x__x-lantern__echad-ce8f0224.glb"
+    },
+    {
+      "id": "o_mtmjm6dj_09xy7",
+      "name": "fantasy-x..x-lantern..echad.glb (copy) (copy)",
+      "ext": "glb",
+      "position": [
+        -71.71985890601242,
+        8.846899909937553,
+        -4.0859485755730365
+      ],
+      "rotation": [
+        0,
+        0.65,
+        0
+      ],
+      "scale": [
+        15.8,
+        15.8,
+        15.8
+      ],
+      "walkable": false,
+      "solid": true,
+      "visible": true,
+      "url": "/models/fantasy-x__x-lantern__echad-ce8f0224.glb"
+    },
+    {
+      "id": "o_mtmjnfx2_6u7d9",
+      "name": "fantasy-x..x-lantern..echad.glb (copy)",
+      "ext": "glb",
+      "position": [
+        -93.10893220064901,
+        8.793949192952438,
+        25.411724859354003
+      ],
+      "rotation": [
+        0,
+        3.65,
+        0
+      ],
+      "scale": [
+        15.8,
+        19.965498149433056,
+        15.8
+      ],
+      "walkable": false,
+      "solid": true,
+      "visible": true,
+      "url": "/models/fantasy-x__x-lantern__echad-ce8f0224.glb"
+    },
+    {
+      "id": "o_mtmjq0oh_ej7s4",
+      "name": "fantasy-x..x-lantern..echad.glb (copy) (copy)",
+      "ext": "glb",
+      "position": [
+        21.98303941324938,
+        8.793949192952438,
+        88.47389906586896
+      ],
+      "rotation": [
+        0,
+        4.55,
+        0
+      ],
+      "scale": [
+        15.8,
+        19.965498149433056,
+        15.8
+      ],
+      "walkable": false,
+      "solid": true,
+      "visible": true,
+      "url": "/models/fantasy-x__x-lantern__echad-ce8f0224.glb"
+    },
+    {
+      "id": "o_mtmjqzd7_ov1bt",
+      "name": "fantasy-x..x-lantern..echad.glb (copy) (copy) (copy)",
+      "ext": "glb",
+      "position": [
+        11.909999807795911,
+        8.793949192952438,
+        47.82015707572224
+      ],
+      "rotation": [
+        0,
+        1.35,
+        0
+      ],
+      "scale": [
+        15.8,
+        19.965498149433056,
+        15.8
+      ],
+      "walkable": false,
+      "solid": true,
+      "visible": true,
+      "url": "/models/fantasy-x__x-lantern__echad-ce8f0224.glb"
+    },
+    {
+      "id": "o_mtmjsqtu_pf5ld",
+      "name": "fantasy-x..x-lantern..echad.glb (copy) (copy)",
+      "ext": "glb",
+      "position": [
+        -24.65012003234418,
+        9.965449618400845,
+        31.68446204525137
+      ],
+      "rotation": [
+        0,
+        2.75,
+        0
+      ],
+      "scale": [
+        15.8,
+        15.8,
+        15.8
+      ],
+      "walkable": false,
+      "solid": true,
+      "visible": true,
+      "url": "/models/fantasy-x__x-lantern__echad-ce8f0224.glb"
+    },
+    {
+      "id": "o_mtmjupa8_4nzr4",
+      "name": "notice_board.glb",
+      "ext": "glb",
+      "position": [
+        -44.234844148582454,
+        0.9978228246523386,
+        17.8603283040132
+      ],
+      "rotation": [
+        0,
+        -0.55,
+        0
+      ],
+      "scale": [
+        4.8,
+        4.8,
+        4.8
+      ],
+      "walkable": false,
+      "solid": true,
+      "visible": true,
+      "url": "/models/notice_board-a9230bcf.glb"
+    },
+    {
+      "id": "o_mtmk6wzm_0dm8j",
+      "name": "free_low_poly_generic_treasure_chest.glb",
+      "ext": "glb",
+      "position": [
+        -36.63972733909601,
+        4.499173855781306,
+        21.87317555210117
+      ],
+      "rotation": [
+        0,
+        -1.05,
+        0
+      ],
+      "scale": [
+        4.6,
+        4.6,
+        4.6
+      ],
+      "walkable": true,
+      "solid": false,
+      "visible": true,
+      "url": "/models/free_low_poly_generic_treasure_chest-cd4b2d4f.glb"
+    }
+  ]
+}
