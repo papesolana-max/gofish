@@ -17,5 +17,5 @@ export const useMerchant = create<MerchantStore>((set) => ({
 }));
 
 /** Where the merchant stands, just in front of the FISHSHOP stall. */
-export const MERCHANT_POS: [number, number] = [8.4, 6.2];
-export const MERCHANT_TALK_DIST = 4.2;
+export const MERCHANT_POS: [number, number] = [8.6, 9.6];
+export const MERCHANT_TALK_DIST = 5.5;

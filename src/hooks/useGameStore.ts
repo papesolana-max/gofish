@@ -87,7 +87,11 @@ function syncCatchToProfile(f: FishCatch) {
     try {
       const { useProfileStore } = await import("@/hooks/useProfileStore");
       const proof = useProfileStore.getState().proof;
-      if (!proof) return;
+      if (!proof) {
+        const { toast } = await import("sonner");
+        toast.error("Catch not saved — connect your wallet and sign to sync your profile.");
+        return;
+      }
       const { recordCatch } = await import("@/lib/profile.functions");
       const profile = await recordCatch({
         data: {
@@ -99,8 +103,10 @@ function syncCatchToProfile(f: FishCatch) {
         },
       });
       if (profile) useProfileStore.getState().setProfile(profile);
-    } catch {
-      /* offline or not signed in — gameplay continues regardless */
+    } catch (error) {
+      const { toast } = await import("sonner");
+      const message = error instanceof Error ? error.message : "Unknown error";
+      toast.error(`Could not save your catch: ${message}`);
     }
   })();
 }
