@@ -151,6 +151,7 @@ export type Database = {
           updated_at: string
           username: string
           wallet_address: string
+          xp: number
         }
         Insert: {
           avatar_url?: string | null
@@ -166,6 +167,7 @@ export type Database = {
           updated_at?: string
           username: string
           wallet_address: string
+          xp?: number
         }
         Update: {
           avatar_url?: string | null
@@ -181,6 +183,7 @@ export type Database = {
           updated_at?: string
           username?: string
           wallet_address?: string
+          xp?: number
         }
         Relationships: []
       }
@@ -258,6 +261,7 @@ export type Database = {
       [_ in never]: never
     }
     Functions: {
+      level_for_xp: { Args: { _xp: number }; Returns: number }
       record_catch: {
         Args: {
           _mutation_key: string
@@ -280,6 +284,7 @@ export type Database = {
           updated_at: string
           username: string
           wallet_address: string
+          xp: number
         }
         SetofOptions: {
           from: "*"
@@ -309,6 +314,7 @@ export type Database = {
           updated_at: string
           username: string
           wallet_address: string
+          xp: number
         }
         SetofOptions: {
           from: "*"
@@ -317,6 +323,7 @@ export type Database = {
           isSetofReturn: false
         }
       }
+      xp_for_rarity: { Args: { _rarity: string }; Returns: number }
     }
     Enums: {
       [_ in never]: never

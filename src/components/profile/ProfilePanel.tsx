@@ -14,6 +14,7 @@ import { Label } from "@/components/ui/label";
 import { supabase } from "@/integrations/supabase/client";
 import { useProfileStore } from "@/hooks/useProfileStore";
 import { updateProfile, uploadAvatar } from "@/lib/profile.functions";
+import { xpProgressFor } from "@/lib/xp";
 
 const RARITIES = [
   { key: "fish_common", label: "Common", tone: "bg-slate-500/25 text-slate-100" },
@@ -50,6 +51,7 @@ export function ProfilePanel() {
   const [uploading, setUploading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const fileInput = useRef<HTMLInputElement>(null);
+  const xpProgress = xpProgressFor(profile?.xp);
 
   useEffect(() => {
     if (!profile) return;
@@ -181,11 +183,24 @@ export function ProfilePanel() {
               onChange={(e) => setDisplayName(e.target.value)}
             />
           </div>
-          <div className="flex items-center justify-between rounded-lg border border-border px-3 py-2 text-sm">
-            <span className="text-muted-foreground">Level</span>
-            <span className="font-semibold">{profile.level}</span>
+          <div className="space-y-2 rounded-lg border border-border px-3 py-2 text-sm">
+            <div className="flex items-center justify-between">
+              <span className="text-muted-foreground">Level</span>
+              <span className="font-semibold">{profile.level}</span>
+            </div>
+            <div className="h-2 overflow-hidden rounded-full bg-muted">
+              <div
+                className="h-full rounded-full bg-primary transition-[width] duration-500"
+                style={{ width: `${xpProgress.percent}%` }}
+              />
+            </div>
+            <div className="flex items-center justify-between text-xs text-muted-foreground tabular-nums">
+              <span>{xpProgress.into.toLocaleString()} / {xpProgress.span.toLocaleString()} XP</span>
+              <span>Total {xpProgress.total.toLocaleString()} XP</span>
+            </div>
           </div>
         </div>
+
 
         <div className="space-y-2">
           <p className="text-sm font-medium">Fish caught</p>

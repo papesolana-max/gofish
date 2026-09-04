@@ -8,6 +8,7 @@ import { useWalletProfile } from "@/hooks/useWalletProfile";
 import { supabase } from "@/integrations/supabase/client";
 import goldLogo from "@/assets/logo-gold.png";
 import coinsLogo from "@/assets/logo-coins.png";
+import { xpProgressFor } from "@/lib/xp";
 
 /** Round profile avatar: uploaded photo when available, initials otherwise, with a level badge. */
 function ProfileAvatar({ size = "h-9 w-9" }: { size?: string }) {
@@ -82,6 +83,7 @@ export function WalletButton() {
   const profile = useProfileStore((s) => s.profile);
   const loading = useProfileStore((s) => s.loading);
   const setPanelOpen = useProfileStore((s) => s.setPanelOpen);
+  const xp = xpProgressFor(profile?.xp);
 
   const { data: ethBalance } = useBalance({
     address,
@@ -145,7 +147,10 @@ export function WalletButton() {
             {profile?.display_name || profile?.username || "Set up profile"}
           </span>
           <span className="block text-[10px] text-slate-400">
-            Level {profile?.level ?? 1}
+            Level {profile?.level ?? 1} &middot; {xp.into.toLocaleString()}/{xp.span.toLocaleString()} XP
+          </span>
+          <span className="mt-1 block h-1 overflow-hidden rounded-full bg-white/10">
+            <span className="block h-full rounded-full bg-sky-400" style={{ width: `${xp.percent}%` }} />
           </span>
         </span>
       </button>
