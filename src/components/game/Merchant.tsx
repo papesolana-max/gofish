@@ -9,6 +9,8 @@ import { MERCHANT_POS, MERCHANT_TALK_DIST, useMerchant } from "@/hooks/useMercha
  * Fish Merchant NPC standing in front of the FISHSHOP stall. Built from
  * primitives so no extra model download is needed.
  */
+const MERCHANT_SCALE = 2.5;
+
 export function Merchant() {
   const group = useRef<THREE.Group>(null);
   const [prompt, setPrompt] = useState(false);
@@ -54,7 +56,7 @@ export function Merchant() {
   });
 
   return (
-    <group ref={group} position={[x, y.current, z]}>
+    <group ref={group} position={[x, y.current, z]} scale={MERCHANT_SCALE}>
       {/* legs */}
       <mesh position={[-0.16, 0.42, 0]} castShadow>
         <capsuleGeometry args={[0.11, 0.6, 4, 8]} />
