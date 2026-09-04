@@ -14,13 +14,309 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      bait_tiers: {
+        Row: {
+          id: string
+          name: string
+          rarity_multiplier: Json
+        }
+        Insert: {
+          id: string
+          name: string
+          rarity_multiplier?: Json
+        }
+        Update: {
+          id?: string
+          name?: string
+          rarity_multiplier?: Json
+        }
+        Relationships: []
+      }
+      fish_inventory_items: {
+        Row: {
+          caught_at: string
+          id: string
+          mutation_key: string
+          species_id: string
+          wallet_address: string
+          weight_kg: number
+        }
+        Insert: {
+          caught_at?: string
+          id?: string
+          mutation_key?: string
+          species_id: string
+          wallet_address: string
+          weight_kg: number
+        }
+        Update: {
+          caught_at?: string
+          id?: string
+          mutation_key?: string
+          species_id?: string
+          wallet_address?: string
+          weight_kg?: number
+        }
+        Relationships: [
+          {
+            foreignKeyName: "fish_inventory_items_wallet_address_fkey"
+            columns: ["wallet_address"]
+            isOneToOne: false
+            referencedRelation: "profiles"
+            referencedColumns: ["wallet_address"]
+          },
+        ]
+      }
+      fish_species: {
+        Row: {
+          base_price_per_kg: number
+          color: string
+          id: string
+          is_monster: boolean
+          max_weight_kg: number
+          min_weight_kg: number
+          name: string
+          rarity: string | null
+        }
+        Insert: {
+          base_price_per_kg?: number
+          color?: string
+          id: string
+          is_monster?: boolean
+          max_weight_kg?: number
+          min_weight_kg?: number
+          name: string
+          rarity?: string | null
+        }
+        Update: {
+          base_price_per_kg?: number
+          color?: string
+          id?: string
+          is_monster?: boolean
+          max_weight_kg?: number
+          min_weight_kg?: number
+          name?: string
+          rarity?: string | null
+        }
+        Relationships: []
+      }
+      game_config: {
+        Row: {
+          key: string
+          value: number
+        }
+        Insert: {
+          key: string
+          value: number
+        }
+        Update: {
+          key?: string
+          value?: number
+        }
+        Relationships: []
+      }
+      mutations: {
+        Row: {
+          drop_weight: number
+          key: string
+          label: string
+          multiplier: number
+        }
+        Insert: {
+          drop_weight?: number
+          key: string
+          label: string
+          multiplier?: number
+        }
+        Update: {
+          drop_weight?: number
+          key?: string
+          label?: string
+          multiplier?: number
+        }
+        Relationships: []
+      }
+      profiles: {
+        Row: {
+          avatar_url: string | null
+          coins: number
+          created_at: string
+          display_name: string
+          fish_common: number
+          fish_epic: number
+          fish_legendary: number
+          fish_mythic: number
+          fish_rare: number
+          level: number
+          updated_at: string
+          username: string
+          wallet_address: string
+        }
+        Insert: {
+          avatar_url?: string | null
+          coins?: number
+          created_at?: string
+          display_name?: string
+          fish_common?: number
+          fish_epic?: number
+          fish_legendary?: number
+          fish_mythic?: number
+          fish_rare?: number
+          level?: number
+          updated_at?: string
+          username: string
+          wallet_address: string
+        }
+        Update: {
+          avatar_url?: string | null
+          coins?: number
+          created_at?: string
+          display_name?: string
+          fish_common?: number
+          fish_epic?: number
+          fish_legendary?: number
+          fish_mythic?: number
+          fish_rare?: number
+          level?: number
+          updated_at?: string
+          username?: string
+          wallet_address?: string
+        }
+        Relationships: []
+      }
+      rarity_base_weights: {
+        Row: {
+          base_weight: number
+          rarity: string
+        }
+        Insert: {
+          base_weight: number
+          rarity: string
+        }
+        Update: {
+          base_weight?: number
+          rarity?: string
+        }
+        Relationships: []
+      }
+      rod_tiers: {
+        Row: {
+          id: string
+          max_catch_weight_kg: number
+          name: string
+        }
+        Insert: {
+          id: string
+          max_catch_weight_kg: number
+          name: string
+        }
+        Update: {
+          id?: string
+          max_catch_weight_kg?: number
+          name?: string
+        }
+        Relationships: []
+      }
+      weather_cycle_config: {
+        Row: {
+          change_interval_seconds: number
+          id: string
+          weights: Json
+        }
+        Insert: {
+          change_interval_seconds?: number
+          id: string
+          weights?: Json
+        }
+        Update: {
+          change_interval_seconds?: number
+          id?: string
+          weights?: Json
+        }
+        Relationships: []
+      }
+      weather_effects: {
+        Row: {
+          bite_window_seconds: number
+          rarity_multiplier: Json
+          weather_kind: string
+        }
+        Insert: {
+          bite_window_seconds?: number
+          rarity_multiplier?: Json
+          weather_kind: string
+        }
+        Update: {
+          bite_window_seconds?: number
+          rarity_multiplier?: Json
+          weather_kind?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
     }
     Functions: {
-      [_ in never]: never
+      record_catch: {
+        Args: {
+          _mutation_key: string
+          _rarity: string
+          _species_id: string
+          _wallet: string
+          _weight_kg: number
+        }
+        Returns: {
+          avatar_url: string | null
+          coins: number
+          created_at: string
+          display_name: string
+          fish_common: number
+          fish_epic: number
+          fish_legendary: number
+          fish_mythic: number
+          fish_rare: number
+          level: number
+          updated_at: string
+          username: string
+          wallet_address: string
+        }
+        SetofOptions: {
+          from: "*"
+          to: "profiles"
+          isOneToOne: true
+          isSetofReturn: false
+        }
+      }
+      sell_fish: {
+        Args: {
+          _item_id: string
+          _sell_all: boolean
+          _species_id: string
+          _wallet: string
+        }
+        Returns: {
+          avatar_url: string | null
+          coins: number
+          created_at: string
+          display_name: string
+          fish_common: number
+          fish_epic: number
+          fish_legendary: number
+          fish_mythic: number
+          fish_rare: number
+          level: number
+          updated_at: string
+          username: string
+          wallet_address: string
+        }
+        SetofOptions: {
+          from: "*"
+          to: "profiles"
+          isOneToOne: true
+          isSetofReturn: false
+        }
+      }
     }
     Enums: {
       [_ in never]: never
