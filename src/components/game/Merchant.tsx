@@ -47,6 +47,9 @@ export function Merchant() {
     if (settle.current < 300) {
       settle.current += 1;
       y.current = groundHeight(x, z);
+      if (typeof window !== "undefined") {
+        (window as unknown as { __merchant?: unknown }).__merchant = { x, z, y: y.current };
+      }
     }
     // gentle idle bob + face the player when they come close
     g.position.y = y.current + Math.sin(state.clock.elapsedTime * 1.6) * 0.03;
