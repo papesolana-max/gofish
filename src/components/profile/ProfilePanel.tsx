@@ -14,6 +14,7 @@ import { Label } from "@/components/ui/label";
 import { supabase } from "@/integrations/supabase/client";
 import { useProfileStore } from "@/hooks/useProfileStore";
 import { updateProfile, uploadAvatar } from "@/lib/profile.functions";
+import { xpProgressFor } from "@/lib/xp";
 
 const RARITIES = [
   { key: "fish_common", label: "Common", tone: "bg-slate-500/25 text-slate-100" },
@@ -50,6 +51,7 @@ export function ProfilePanel() {
   const [uploading, setUploading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const fileInput = useRef<HTMLInputElement>(null);
+  const xpProgress = xpProgressFor(profile?.xp);
 
   useEffect(() => {
     if (!profile) return;
