@@ -83,6 +83,7 @@ export function WalletButton() {
   const profile = useProfileStore((s) => s.profile);
   const loading = useProfileStore((s) => s.loading);
   const setPanelOpen = useProfileStore((s) => s.setPanelOpen);
+  const xp = xpProgressFor(profile?.xp);
 
   const { data: ethBalance } = useBalance({
     address,
