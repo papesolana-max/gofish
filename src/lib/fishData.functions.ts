@@ -8,6 +8,7 @@ import type {
   WeatherCycleConfig,
   WeatherEffect,
 } from "./fishRules";
+import { FALLBACK_FISH_DATA } from "./fishRules";
 
 /** Public read-only game rules. Safe for anonymous callers. */
 export const getFishData = createServerFn({ method: "GET" }).handler(async (): Promise<FishData> => {
@@ -47,7 +48,13 @@ export const getFishData = createServerFn({ method: "GET" }).handler(async (): P
   ]);
 
   const firstError = [species, rarity, rods, baits, weather, config, cycle, mutations].find((r) => r.error)?.error;
-  if (firstError) throw new Error(firstError.message);
+  if (firstError) {
+    // Transient upstream problems (gateway clock skew -> "JWT issued at future",
+    // network blips) must never blank-screen the game: serve the bundled rules.
+    console.error("[getFishData] falling back to bundled rules:", firstError.message);
+    return FALLBACK_FISH_DATA;
+  }
+  if (!species.data || species.data.length === 0) return FALLBACK_FISH_DATA;
 
   const rarityWeights: Record<string, number> = {};
   for (const row of (rarity.data ?? []) as Array<{ rarity: string; base_weight: number }>) {
